@@ -1,0 +1,45 @@
+/* * This file contains the styles for the frontend.
+ * It uses a combination of standard CSS and Tailwind CSS classes for styling.
+ */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90vw;
+    margin: auto;
+    padding: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.relevance-score {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.animated-bg {
+    background: linear-gradient(-45deg, #a855f7, #6366f1, #ec4899, #f3f4f6);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
